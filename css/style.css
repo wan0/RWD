@@ -1,0 +1,352 @@
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+    
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+    
+    body {
+        line-height: 1;
+    }
+    
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    blockquote,
+    q {
+        quotes: none;
+    }
+    
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+        content: '';
+        content: none;
+    }
+    
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    /************* CSS RESET END *************/
+    
+    * {
+        font-family: 微軟正黑體;
+        font-size: 15px;
+    }
+    
+    body {
+        font-family: 微軟正黑體;
+        font-size: 15px;
+    }
+    
+    .clearfix {
+        clear: both;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    h3 {
+        font-size: 18px;
+    }
+    
+    .wrap {
+        /*width: 1002px;*/
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    /**** bar ****/
+    
+    .bar {
+        background: #f6f6f6;
+        height: 28px;
+    }
+    
+    .bar ul {
+        float: right;
+        margin-right: 15px;
+    }
+    
+    .bar ul li {
+        float: left;
+        margin: 5px;
+    }
+    
+    .bar ul li img {
+        margin-right: 5px;
+        float: left;
+    }
+    
+    .bar ul li span {
+        float: left;
+    }
+    
+    .facebook a {
+        color: #4460a0;
+        text-decoration: none;
+    }
+    
+    .twitter a {
+        color: #00aaec;
+        text-decoration: none;
+    }
+    
+    .facebook {
+        /*border-right: 2px solid #cccccc;*/
+        padding-right: 8px;
+    }
+    /**** header ****/
+    
+    .header {
+        background: white;
+        height: 52px;
+        border-radius: 5px;
+        box-shadow: 0px 2px 3px gray;
+    }
+    
+    .header h1 {
+        float: left;
+        display: block;
+        width: 170px;
+        height: 36px;
+        background-image: url(../images/logo.png);
+        text-indent: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 10px 0 0 20px;
+        cursor: pointer;
+    }
+    
+    .menu {
+        float: right;
+        margin: 17px 10px 0 0;
+    }
+    
+    .menu > li {
+        float: left;
+        margin-left: 30px;
+    }
+    
+    .menu a {
+        color: #00cc99;
+        text-decoration: none;
+        padding: 0 10px;
+        /* 向內推，底線就可加長*/
+    }
+    
+    .menu > li > a:hover {
+        border-bottom: 4px solid #00cc99;
+        padding-bottom: 14px;
+    }
+    
+    @media(max-width: 767px) {
+        * {
+            font-size: 18px;
+        }
+        body {
+            font-size: 18px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 24px;
+        }
+        .header {
+            height: 0;
+        }
+        .header h1 {
+            float: none;
+            margin: 1% auto;
+        }
+        .menu {
+            float: none;
+            margin: 0 auto;
+            font-size: 24px;
+        }
+        .menu > li {
+            float: left;
+            text-align: center;
+            /*border: 1px solid gray;*/
+            margin: 2% 1%;
+            width: 48%;
+        }
+        .menu a {
+            padding: 0;
+        }
+        .menu > li > a:hover {
+            padding-bottom: 0;
+        }
+        .menu > li > a:focus {
+            color: #666;
+        }
+    }
+    /**** intro ****/
+    
+    .intro {
+        margin: 62px auto;
+    }
+    
+    .intro .intro_li {
+        float: left;
+        width: 30%;
+        text-align: center;
+        margin: 0 1.5%;
+        padding: 20px;
+        border-left: 1px solid #f1f1f1;
+        border-right: 1px solid #f1f1f1;
+        border-bottom: 1px solid #f1f1f1;
+        border-radius: 5px;
+        box-shadow: 0px 2px 3px gray;
+    }
+    
+    .intro h3 {
+        margin: 12px;
+    }
+    
+    .intro .intro_li p {
+        line-height: 1.2em;
+        text-align: justify;
+    }
+    
+    .intro_jQuery {
+        text-align: left;
+        line-height: 1.2em;
+        /*list-style: disc;*/
+    }
+    
+    .intro.clearfix {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    @media(max-width: 767px) {
+        .intro {
+            margin: 5% auto;
+        }
+        .intro .intro_li {
+            float: none;
+            width: 60%;
+            margin: auto;
+            margin-bottom: 5%;
+        }
+    }
